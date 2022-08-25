@@ -2,8 +2,13 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
+
 import 'package:meditation/detail_page.dart';
-import 'package:meditation/jaggi_page.dart';
+import 'package:meditation/girlshostel_page.dart';
+import 'package:meditation/hostelc_page.dart';
+import 'package:meditation/hostelh_page.dart';
+import 'package:meditation/hostelj_page.dart';
+import 'package:meditation/hostelm_page.dart';
 import 'package:meditation/widgets/category_boxes.dart';
 import 'package:meditation/icons.dart';
 import 'package:meditation/widgets/discover_card.dart';
@@ -11,16 +16,16 @@ import 'package:meditation/widgets/discover_small_card.dart';
 import 'package:meditation/widgets/svg_asset.dart';
 //import 'package:url_launcher/url_launcher.dart';
 
-class Lifeafter5Page extends StatefulWidget {
-  const Lifeafter5Page({
+class NontechsocPage extends StatefulWidget {
+  const NontechsocPage({
     Key? key,
   }) : super(key: key);
 
   @override
-  State<Lifeafter5Page> createState() => _Lifeafter5PageState();
+  State<NontechsocPage> createState() => _NontechsocPageState();
 }
 
-class _Lifeafter5PageState extends State<Lifeafter5Page> {
+class _NontechsocPageState extends State<NontechsocPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -32,13 +37,13 @@ class _Lifeafter5PageState extends State<Lifeafter5Page> {
             Padding(
               padding: EdgeInsets.only(
                 left: 70.w,
-                right: 50.w,
+                right: 20.w,
                 top: 36.h,
               ),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text("Life After 5",
+                  Text("NON TECH SOCITIES",
                       textAlign:TextAlign.center,
                       style: TextStyle(
 
@@ -79,10 +84,10 @@ class _Lifeafter5PageState extends State<Lifeafter5Page> {
                     child: DiscoverCard(
 
                       onTap:() {
-                        Navigator.push(context, MaterialPageRoute(builder:(context)=>JaggiPage()));
+                        Navigator.push(context, MaterialPageRoute(builder:(context)=>HostelcPage()));
                       },
-                      title: "Jaggi",
-                      subtitle: "EStablished 1980",
+                      title: "Thapar Nautanki Club",
+                      subtitle: "380 rooms",
                       gradientStartColor: Color(0xffFC67A7),
                       gradientEndColor: Color(0xffF6815B),
                     ),
@@ -129,6 +134,56 @@ class _Lifeafter5PageState extends State<Lifeafter5Page> {
                 scrollDirection: Axis.horizontal,
                 children: [
                   SizedBox(width: 35.w,),
+                  InkWell(
+                    child: DiscoverCard(
+
+                      onTap:() {
+                        Navigator.push(context, MaterialPageRoute(builder:(context)=>HosteljPage()));
+                      },
+                      title: "Echoes",
+                      subtitle: "EStablished 1980",
+                      gradientStartColor: Color(0xff13DEA0),
+                      gradientEndColor: Color(0xff06B782),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            SizedBox(height: 10.h),
+
+            SizedBox(
+              height: 121.w,
+
+              child: ListView(
+                physics: BouncingScrollPhysics(),
+                scrollDirection: Axis.horizontal,
+                children: [
+                  SizedBox(width: 35.w,),
+                  InkWell(
+                    child: DiscoverCard(
+
+                      // onTap:() {
+                      //   Navigator.push(context, MaterialPageRoute(builder:(context)=>HostelcPage()));
+                      // },
+                      title: "Thapar Literally Socitey",
+                      subtitle: "EStablished 2020",
+                      gradientStartColor: Color(0xffFC67A7),
+                      gradientEndColor: Color(0xffF6815B),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            SizedBox(height: 10.h),
+
+            SizedBox(
+              height: 121.w,
+
+              child: ListView(
+                physics: BouncingScrollPhysics(),
+                scrollDirection: Axis.horizontal,
+                children: [
+                  SizedBox(width: 35.w,),
                   DiscoverCard(
 
                     //  onTap: ()async{
@@ -138,62 +193,8 @@ class _Lifeafter5PageState extends State<Lifeafter5Page> {
                     //     throw 'Could not launch $_url';
                     //    }
                     // },
-                    title: "Waterfront Cafe",
+                    title: "ToastMasters ",
                     subtitle: "EStablished 1980",
-                    gradientStartColor: Color(0xff13DEA0),
-                    gradientEndColor: Color(0xff06B782),
-                  ),
-                ],
-              ),
-            ),
-            SizedBox(height: 10.h),
-
-            SizedBox(
-              height: 121.w,
-
-              child: ListView(
-                physics: BouncingScrollPhysics(),
-                scrollDirection: Axis.horizontal,
-                children: [
-                  SizedBox(width: 35.w,),
-                  DiscoverCard(
-
-                    //  onTap: ()async{
-                    //    final Uri _url = Uri.parse('https://youtu.be/T0GaMCVaJlo');
-                    //
-                    //   if (!await launchUrl(_url)) {
-                    //     throw 'Could not launch $_url';
-                    //    }
-                    // },
-                    title: "Streat Cafe",
-                    subtitle: "EStablished 2020",
-                    gradientStartColor: Color(0xffFC67A7),
-                    gradientEndColor: Color(0xffF6815B),
-                  ),
-                ],
-              ),
-            ),
-            SizedBox(height: 10.h),
-
-            SizedBox(
-              height: 121.w,
-
-              child: ListView(
-                physics: BouncingScrollPhysics(),
-                scrollDirection: Axis.horizontal,
-                children: [
-                  SizedBox(width: 35.w,),
-                  DiscoverCard(
-
-                    //  onTap: ()async{
-                    //    final Uri _url = Uri.parse('https://youtu.be/T0GaMCVaJlo');
-                    //
-                    //   if (!await launchUrl(_url)) {
-                    //     throw 'Could not launch $_url';
-                    //    }
-                    // },
-                    title: "OAT ",
-                    subtitle: "Open Air Theatre",
                     gradientStartColor: Color(0xffFFD541),
                     gradientEndColor: Color(0xffF0B31A),
                   ),
@@ -210,19 +211,46 @@ class _Lifeafter5PageState extends State<Lifeafter5Page> {
                 scrollDirection: Axis.horizontal,
                 children: [
                   SizedBox(width: 35.w,),
-                  DiscoverCard(
+                  InkWell(
+                    child: DiscoverCard(
 
-                    //  onTap: ()async{
-                    //    final Uri _url = Uri.parse('https://youtu.be/T0GaMCVaJlo');
-                    //
-                    //   if (!await launchUrl(_url)) {
-                    //     throw 'Could not launch $_url';
-                    //    }
-                    // },
-                    title: "COS",
-                    subtitle: "Culture Open Theatre and Sports Complex",
-                    gradientStartColor: Color(0xffFC67A7),
-                    gradientEndColor: Color(0xffF6815B),
+                      //  onTap: ()async{
+                      //    final Uri _url = Uri.parse('https://youtu.be/T0GaMCVaJlo');
+                      //
+                      //   if (!await launchUrl(_url)) {
+                      //     throw 'Could not launch $_url';
+                      //    }
+                      // },
+                      title: "AIESEC",
+                      subtitle: "EStablished 1980",
+                      gradientStartColor: Color(0xffFC67A7),
+                      gradientEndColor: Color(0xffF6815B),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            SizedBox(height: 10.h),
+
+            SizedBox(
+              height: 121.w,
+
+              child: ListView(
+                physics: BouncingScrollPhysics(),
+                scrollDirection: Axis.horizontal,
+                children: [
+                  SizedBox(width: 35.w,),
+                  InkWell(
+                    child: DiscoverCard(
+
+                      onTap:() {
+                        Navigator.push(context, MaterialPageRoute(builder:(context)=>HostelmPage()));
+                      },
+                      title: "Hostel M",
+                      subtitle: "EStablished 1980",
+                      gradientStartColor: Color(0xff13DEA0),
+                      gradientEndColor: Color(0xff06B782),
+                    ),
                   ),
                 ],
               ),
@@ -246,35 +274,8 @@ class _Lifeafter5PageState extends State<Lifeafter5Page> {
                     //     throw 'Could not launch $_url';
                     //    }
                     // },
-                    title: "AAHAR",
+                    title: "Hostel O",
                     subtitle: "EStablished 1980",
-                    gradientStartColor: Color(0xff13DEA0),
-                    gradientEndColor: Color(0xff06B782),
-                  ),
-                ],
-              ),
-            ),
-            SizedBox(height: 10.h),
-
-            SizedBox(
-              height: 121.w,
-
-              child: ListView(
-                physics: BouncingScrollPhysics(),
-                scrollDirection: Axis.horizontal,
-                children: [
-                  SizedBox(width: 35.w,),
-                  DiscoverCard(
-
-                    //  onTap: ()async{
-                    //    final Uri _url = Uri.parse('https://youtu.be/T0GaMCVaJlo');
-                    //
-                    //   if (!await launchUrl(_url)) {
-                    //     throw 'Could not launch $_url';
-                    //    }
-                    // },
-                    title: "G Block Cafetaria",
-                    subtitle: "Established 1980",
                     gradientStartColor: Color(0xffFC67A7),
                     gradientEndColor: Color(0xffF6815B),
                   ),

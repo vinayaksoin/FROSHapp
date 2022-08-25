@@ -4,19 +4,19 @@ import 'package:flutter/services.dart';
 import 'package:flutter_cube/flutter_cube.dart';
 
 void main() => runApp(MaterialApp(
-  home: HostelcPage(),
+  home: HosteljPage(),
 ));
 
 
-class HostelcPage extends StatefulWidget {
+class HosteljPage extends StatefulWidget {
   @override
-  _HostelcPageState createState() => _HostelcPageState();
+  _HosteljPageState createState() => _HosteljPageState();
 }
-class _HostelcPageState extends State<HostelcPage>
+class _HosteljPageState extends State<HosteljPage>
 {
   late Object jet;
   void initState() {
-    jet = Object(fileName: "assets/3dobjects/Hostelc/Hostelc.obj");
+    jet = Object(fileName: "assets/3dobjects/Hostelj/JHostel.obj");
     jet.position.setValues(50, 50, 50);
 
     jet.rotation.setValues(90, 0, 90);

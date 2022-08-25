@@ -4,19 +4,19 @@ import 'package:flutter/services.dart';
 import 'package:flutter_cube/flutter_cube.dart';
 
 void main() => runApp(MaterialApp(
-  home: HostelcPage(),
+  home: HostelhPage(),
 ));
 
 
-class HostelcPage extends StatefulWidget {
+class HostelhPage extends StatefulWidget {
   @override
-  _HostelcPageState createState() => _HostelcPageState();
+  _HostelhPageState createState() => _HostelhPageState();
 }
-class _HostelcPageState extends State<HostelcPage>
+class _HostelhPageState extends State<HostelhPage>
 {
   late Object jet;
   void initState() {
-    jet = Object(fileName: "assets/3dobjects/Hostelc/Hostelc.obj");
+    jet = Object(fileName: "assets/3dobjects/Hostelh/Hostelh.obj");
     jet.position.setValues(50, 50, 50);
 
     jet.rotation.setValues(90, 0, 90);
@@ -24,11 +24,11 @@ class _HostelcPageState extends State<HostelcPage>
     super.initState();
   }
 
-  final double coverHeight = 200;
+  final double coverHeight = 100;
   final double profileHeight = 144;
   @override
   Widget build(BuildContext context) {
-    final bottom = coverHeight+280;
+    final bottom = coverHeight+380;
     return Scaffold(
       backgroundColor: Color(0xff1C203) ,
       body: Stack(
@@ -62,7 +62,7 @@ Widget buildProfileImage()=>Container(
   child: Column(
     children: [
       Text(
-        'HOSTEL C',
+        'HOSTEL H',
 
 
         textAlign: TextAlign.center,
@@ -72,7 +72,7 @@ Widget buildProfileImage()=>Container(
         ),
       ),
       Text(
-        'Warden: Dr. Hari Shankar',
+        'Warden: Dr. Madhup Kumar Mittal',
         textAlign: TextAlign.center,
         style: TextStyle(
             color: Colors.white,
@@ -100,7 +100,7 @@ Widget buildProfileImage()=>Container(
             fontSize: 20
         ),
       ),
-      Text('Caretaker: Mr Gurmeet Singh',
+      Text('Caretaker: mr Amandeep Rishi',
         textAlign: TextAlign.center,
         style: TextStyle(
             color: Colors.white,

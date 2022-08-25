@@ -4,22 +4,23 @@ import 'package:flutter/services.dart';
 import 'package:flutter_cube/flutter_cube.dart';
 
 void main() => runApp(MaterialApp(
-  home: HostelcPage(),
+  home: HostelePage(),
 ));
 
 
-class HostelcPage extends StatefulWidget {
+class HostelePage extends StatefulWidget {
   @override
-  _HostelcPageState createState() => _HostelcPageState();
+  _HostelePageState createState() => _HostelePageState();
 }
-class _HostelcPageState extends State<HostelcPage>
+class _HostelePageState extends State<HostelePage>
 {
   late Object jet;
   void initState() {
-    jet = Object(fileName: "assets/3dobjects/Hostelc/Hostelc.obj");
-    jet.position.setValues(50, 50, 50);
+    jet = Object(fileName: "assets/3dobjects/Hostele/HOSTEL.obj");
+    jet.position.setValues(0, 0, 0);
 
-    jet.rotation.setValues(90, 0, 90);
+    jet.rotation.setValues(0, 0, 0);
+    
 
     super.initState();
   }
@@ -51,7 +52,7 @@ class _HostelcPageState extends State<HostelcPage>
     child: Cube(
       onSceneCreated: (Scene scene) {
         scene.world.add(jet);
-        scene.camera.zoom = 5;
+        scene.camera.zoom = 7;
       },
     ),
   );
@@ -62,7 +63,7 @@ Widget buildProfileImage()=>Container(
   child: Column(
     children: [
       Text(
-        'HOSTEL C',
+        'HOSTEL E',
 
 
         textAlign: TextAlign.center,

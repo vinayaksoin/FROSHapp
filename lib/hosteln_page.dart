@@ -4,15 +4,15 @@ import 'package:flutter/services.dart';
 import 'package:flutter_cube/flutter_cube.dart';
 
 void main() => runApp(MaterialApp(
-  home: HostelcPage(),
+  home: HostelnPage(),
 ));
 
 
-class HostelcPage extends StatefulWidget {
+class HostelnPage extends StatefulWidget {
   @override
-  _HostelcPageState createState() => _HostelcPageState();
+  _HostelnPageState createState() => _HostelnPageState();
 }
-class _HostelcPageState extends State<HostelcPage>
+class _HostelnPageState extends State<HostelnPage>
 {
   late Object jet;
   void initState() {
